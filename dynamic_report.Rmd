@@ -49,7 +49,7 @@ latest_data <- read_csv(csv_file) %>%
 latest_data %>%
   ggplot() +
   geom_bar(aes(x = content_type),
-           fill = "#CDB5CD") +
+           fill = "#FFC1E8") +
   labs(title = "Top watched content on TikTok",
        subtitle = "The most commonly viewed content on TikTok during my 5-minute timed scroll sessions",
        caption = "Source: Avani Narayan, TikTok Feed Survey - stats220",
@@ -62,7 +62,7 @@ latest_data %>%
 latest_data %>%
   ggplot() +
   geom_bar(aes(x = engagement_type),
-           fill = "#A2B5FF") +
+           fill = "#ECC3FB") +
   scale_x_discrete(labels = c("Mixed", 
                               "Mostly skipped", 
                               "Mostly watched fully")) +
